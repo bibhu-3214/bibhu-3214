@@ -10,11 +10,9 @@
 <img width="55%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
 
 
-- 🔭 I’m currently working on Bill Management App, https://github.com/bibhu-3214/Bill-Management-App
+- 🌱 Currently learning TypeScript, NodeJs, Figma 
 
-- 🌱 I’m currently learning TypeScript, NodeJs, Figma 
-
-- 👯 I’m looking to collaborate on Projects,Tech Articles 
+- 👯 looking to collaborate on Projects,Tech Articles 
 
 - 💬 Talk to me about React, Redux, JavaScript, Freelancing Opportunites, Open Source 
 
