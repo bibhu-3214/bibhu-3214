@@ -10,7 +10,7 @@
 <img width="55%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
 
 
-- 🌱 Currently learning TypeScript, NodeJs, Figma 
+- 🌱 Currently learning TypeScript, NodeJs, Figma, Next.js
 
 - 👯 looking to collaborate on Projects,Tech Articles 
 
