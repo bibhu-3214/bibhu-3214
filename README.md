@@ -1,43 +1,66 @@
-<h1> Hi, I'm Bibhu Prasad! <img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 50px> </h1>
-<p align='center'>
-
+<p align="center">
+  <img src="./assets/profile-banner.svg" alt="Bibhu Prasad Sahu — Frontend Engineer. React, Redux and JavaScript." width="100%" />
 </p>
-<div size='20px'> Thank You for taking the time to view my GitHub Profile :smile: 
-</div>
 
-<h2> About Me </h2>
+<p align="center">
+  <a href="https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/"><strong>LinkedIn</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://twitter.com/bibhu1prasad"><strong>X / Twitter</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/bibhu-3214?tab=repositories"><strong>Explore repositories</strong></a>
+</p>
 
-<img width="55%" align="right" alt="Github" src="https://raw.githubusercontent.com/onimur/.github/master/.resources/git-header.svg" />
+## Engineering with a frontend focus
 
+I'm **Bibhu Prasad Sahu**, a Software Engineer working with **React, Redux and JavaScript**. My work at **GyanSys Inc.** includes enterprise application interfaces in the semiconductor domain.
 
-- 🌱 Currently learning TypeScript, NodeJs, Figma, Next.js
+I care about interfaces that make complex workflows easier to use, state that stays understandable, and code that is straightforward to maintain.
 
-- 👯 looking to collaborate on Projects,Tech Articles 
+## Selected projects
 
-- 💬 Talk to me about React, Redux, JavaScript, Freelancing Opportunites, Open Source 
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>01 / Bill Management</h3>
+<p>A frontend application for managing customers, products and bills, with account-based workflows and browser-local storage.</p>
+<p><strong>React · Redux · Material UI · Formik</strong></p>
+<p><a href="https://github.com/bibhu-3214/Bill-Management-App"><strong>Explore the repository →</strong></a></p>
+</td>
+<td width="50%" valign="top">
+<h3>02 / Authentication &amp; Notes</h3>
+<p>A React application with registration, sign-in, account details and a personal notes workflow supporting create, edit and delete operations.</p>
+<p><strong>React · Redux · React Router · Axios</strong></p>
+<p><a href="https://github.com/bibhu-3214/user-authentication-react-redux"><strong>Explore the repository →</strong></a></p>
+</td>
+</tr>
+</table>
 
+<sub>Personal projects exploring application workflows and frontend implementation. See each repository for setup instructions and limitations.</sub>
 
-<h2> Skills <img src = "https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width = 32px> </h2>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=reactjs&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/reactjs.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=javascript&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/javascript.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=redux&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/redux.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=html&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/html.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=css&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/css.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=bootstrap&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/bootstrap.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=materialize&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/materialize.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=git&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/git.svg'> </a>
-<a href= https://github.com/rahulbanerjee26?tab=repositories&q=&type=&language=postman&sort= > <img width ='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/postman.svg'> </a>
+## Toolkit
 
+| Area | Technologies |
+| :--- | :--- |
+| Core frontend | JavaScript (ES6+), React, Redux, HTML, CSS |
+| Application workflows | React Router, Redux Thunk, Axios, Formik, Yup |
+| UI & development tools | Material UI, Bootstrap, Git, GitHub, Postman |
+| Exploring | TypeScript, Next.js, Node.js |
 
-<h2> Connect with me <img src='https://raw.githubusercontent.com/ShahriarShafin/ShahriarShafin/main/Assets/handshake.gif' width="100px"> </h2>
-<a href = 'https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/linked-in-alt.svg"/></a> 
-<a href = 'https://twitter.com/bibhu1prasad'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg"/></a> 
-<a href = 'https://github.com/bibhu-3214'> <img width = '32px' align= 'center' src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg"/></a> 
-<br>
+<details>
+<summary><strong>Engineering interests</strong></summary>
 
+- **Component design:** reusable interfaces with clear responsibilities.
+- **State management:** predictable data flow and explicit application state.
+- **User experience:** responsive layouts and understandable form feedback.
+- **Application quality:** performance, accessibility and maintainability.
 
-<h2> My GitHub Stats <img src='https://media1.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif?cid=ecf05e47x2g034i9pzwtzzsd3xgg2w9nr94t4tflbbgo3008&rid=giphy.gif' width='32px'> </h2>
+</details>
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=bibhu-3214&count_private=true&show_icons=true&theme=radical" />
-</a>
+## Connect
+
+I welcome conversations about frontend engineering, React applications, technical writing and collaborative projects.
+
+**[Connect on LinkedIn](https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/)** · **[Follow on X](https://twitter.com/bibhu1prasad)**
+
+---
+<sub>Build with clarity. Keep improving.</sub>
