@@ -7,7 +7,7 @@
   <a href="#selected-work">Selected work</a> &nbsp; / &nbsp;
   <a href="#engineering-perspective">Engineering perspective</a> &nbsp; / &nbsp;
   <a href="https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/">LinkedIn</a> &nbsp; / &nbsp;
-  <a href="https://twitter.com/bibhu1prasad">X</a>
+  <a href="https://x.com/bibhuprasaddd">X</a>
 </p>
 
 <br />
@@ -76,7 +76,7 @@ Personal projects exploring practical application workflows. Each repository con
 
 For conversations about **React engineering, frontend architecture, technical writing or collaborative projects**, connect with me on LinkedIn.
 
-**[LinkedIn ↗](https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/)** &nbsp; · &nbsp; **[X / Twitter ↗](https://twitter.com/bibhu1prasad)**
+**[LinkedIn ↗](https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/)** &nbsp; · &nbsp; **[X / Twitter ↗](https://x.com/bibhuprasaddd)**
 
 ---
 <p align="center"><sub>BIBHU PRASAD SAHU &nbsp; / &nbsp; FRONTEND ENGINEERING<br />Clarity in the interface. Intent in the implementation.</sub></p>
