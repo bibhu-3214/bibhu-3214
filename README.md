@@ -1,66 +1,82 @@
-<p align="center">
-  <img src="./assets/profile-banner.svg" alt="Bibhu Prasad Sahu — Frontend Engineer. React, Redux and JavaScript." width="100%" />
-</p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-banner.png" />
+  <img src="./assets/profile-banner.gif" alt="Bibhu Prasad Sahu — Frontend Engineering. Complex workflows. Clear interfaces. React, Redux and JavaScript." width="100%" />
+</picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/"><strong>LinkedIn</strong></a>
-  &nbsp; · &nbsp;
-  <a href="https://twitter.com/bibhu1prasad"><strong>X / Twitter</strong></a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/bibhu-3214?tab=repositories"><strong>Explore repositories</strong></a>
+  <a href="#selected-work">Selected work</a> &nbsp; / &nbsp;
+  <a href="#engineering-perspective">Engineering perspective</a> &nbsp; / &nbsp;
+  <a href="https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/">LinkedIn</a> &nbsp; / &nbsp;
+  <a href="https://twitter.com/bibhu1prasad">X</a>
 </p>
 
-## Engineering with a frontend focus
+<br />
 
-I'm **Bibhu Prasad Sahu**, a Software Engineer working with **React, Redux and JavaScript**. My work at **GyanSys Inc.** includes enterprise application interfaces in the semiconductor domain.
+### Software engineer. Frontend focus.
 
-I care about interfaces that make complex workflows easier to use, state that stays understandable, and code that is straightforward to maintain.
+I’m **Bibhu Prasad Sahu**, a Software Engineer at **GyanSys Inc.**, working with **React, Redux and JavaScript**. My experience includes enterprise application interfaces in the semiconductor domain.
 
-## Selected projects
+I’m interested in the decisions behind a useful interface: how components fit together, where state belongs, and how people move through complex workflows. My aim is to make those decisions clear in both the product and the code.
+
+<br />
+
+## Selected work
+
+Personal projects exploring practical application workflows. Each repository contains its implementation and setup details.
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<h3>01 / Bill Management</h3>
-<p>A frontend application for managing customers, products and bills, with account-based workflows and browser-local storage.</p>
-<p><strong>React · Redux · Material UI · Formik</strong></p>
-<p><a href="https://github.com/bibhu-3214/Bill-Management-App"><strong>Explore the repository →</strong></a></p>
+<a href="https://github.com/bibhu-3214/Bill-Management-App"><img src="./assets/project-billing.png" alt="Selected work 01 — Bill Management" width="100%" /></a>
+<p>Customer, product and billing workflows in a browser-based React application.</p>
+<p><strong>Explore:</strong> connected CRUD flows, form validation, Redux state and browser-local persistence.</p>
+<p><code>React</code> <code>Redux</code> <code>Material UI</code> <code>Formik</code></p>
+<p><a href="https://github.com/bibhu-3214/Bill-Management-App"><strong>Read the code ↗</strong></a></p>
+<sub>Frontend-only personal project; not a production financial service.</sub>
 </td>
 <td width="50%" valign="top">
-<h3>02 / Authentication &amp; Notes</h3>
-<p>A React application with registration, sign-in, account details and a personal notes workflow supporting create, edit and delete operations.</p>
-<p><strong>React · Redux · React Router · Axios</strong></p>
-<p><a href="https://github.com/bibhu-3214/user-authentication-react-redux"><strong>Explore the repository →</strong></a></p>
+<a href="https://github.com/bibhu-3214/user-authentication-react-redux"><img src="./assets/project-notes.png" alt="Selected work 02 — Identity and Notes" width="100%" /></a>
+<p>Registration, sign-in and account details connected to a personal notes workflow.</p>
+<p><strong>Explore:</strong> authenticated navigation, API interactions, validation and note management.</p>
+<p><code>React</code> <code>Redux</code> <code>React Router</code> <code>Axios</code></p>
+<p><a href="https://github.com/bibhu-3214/user-authentication-react-redux"><strong>Read the code ↗</strong></a></p>
+<sub>Personal application project; see the repository for its scope.</sub>
 </td>
 </tr>
 </table>
 
-<sub>Personal projects exploring application workflows and frontend implementation. See each repository for setup instructions and limitations.</sub>
+<p align="right"><a href="https://github.com/bibhu-3214?tab=repositories">Browse all repositories →</a></p>
 
-## Toolkit
+## Engineering perspective
 
-| Area | Technologies |
-| :--- | :--- |
-| Core frontend | JavaScript (ES6+), React, Redux, HTML, CSS |
-| Application workflows | React Router, Redux Thunk, Axios, Formik, Yup |
-| UI & development tools | Material UI, Bootstrap, Git, GitHub, Postman |
-| Exploring | TypeScript, Next.js, Node.js |
+**01 — Make complexity understandable.** Give components clear responsibilities and keep data flow explicit.
+
+**02 — Design around the workflow.** Consider navigation, form feedback and the transitions between application states.
+
+**03 — Improve with evidence.** Performance, accessibility and maintainability are areas I care about developing and measuring.
 
 <details>
-<summary><strong>Engineering interests</strong></summary>
+<summary><strong>Open the technical toolkit</strong></summary>
 
-- **Component design:** reusable interfaces with clear responsibilities.
-- **State management:** predictable data flow and explicit application state.
-- **User experience:** responsive layouts and understandable form feedback.
-- **Application quality:** performance, accessibility and maintainability.
+<br />
+
+| Focus | Technologies |
+| :--- | :--- |
+| Frontend | JavaScript (ES6+), React, Redux, HTML, CSS |
+| State & integration | Redux Thunk, React Router, Axios |
+| UI & forms | Material UI, Bootstrap, Formik, Yup |
+| Development | Git, GitHub, Postman |
+| Exploring | TypeScript, Next.js, Node.js |
 
 </details>
 
-## Connect
+<br />
 
-I welcome conversations about frontend engineering, React applications, technical writing and collaborative projects.
+## Let’s connect
 
-**[Connect on LinkedIn](https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/)** · **[Follow on X](https://twitter.com/bibhu1prasad)**
+For conversations about **React engineering, frontend architecture, technical writing or collaborative projects**, connect with me on LinkedIn.
+
+**[LinkedIn ↗](https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/)** &nbsp; · &nbsp; **[X / Twitter ↗](https://twitter.com/bibhu1prasad)**
 
 ---
-<sub>Build with clarity. Keep improving.</sub>
+<p align="center"><sub>BIBHU PRASAD SAHU &nbsp; / &nbsp; FRONTEND ENGINEERING<br />Clarity in the interface. Intent in the implementation.</sub></p>
