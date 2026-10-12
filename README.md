@@ -7,6 +7,7 @@
   <a href="#selected-work">Selected work</a> &nbsp; / &nbsp;
   <a href="#engineering-perspective">Engineering perspective</a> &nbsp; / &nbsp;
   <a href="https://www.linkedin.com/in/bibhu-prasad-sahu-8a1908199/">LinkedIn</a> &nbsp; / &nbsp;
+  <a href="./assets/Bibhu_Prasad_Sahu_Resume.pdf">Resume</a> &nbsp; / &nbsp;
   <a href="https://x.com/bibhuprasaddd">X</a>
 </p>
 
