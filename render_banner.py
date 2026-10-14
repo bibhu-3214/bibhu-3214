@@ -1,66 +1,82 @@
+"""Original geometric motion system. Run with Python 3 + Pillow >= 10.
+No external images/fonts downloaded. GIFs play once (6s); PNG fallbacks included.
+"""
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
-import math
-
+import math, os
 ROOT = Path(__file__).parent
-W, H = 1400, 490
-BG = '#0C111B'
-GOLD = '#C9AE7B'
-IVORY = '#F4F0E8'
-MUTED = '#A7B1C0'
-def font(size, bold=False, mono=False):
-    family = 'DejaVuSansMono' if mono else 'DejaVuSans'
-    return ImageFont.truetype('/usr/share/fonts/truetype/dejavu/'+family+('-Bold' if bold else '')+'.ttf', size)
-base = Image.new('RGB',(W,H),BG)
-d = ImageDraw.Draw(base)
-d.rounded_rectangle((1,1,W-2,H-2),radius=24,outline='#2B3443',width=2)
-d.rectangle((58,57,94,60),fill=GOLD)
-d.text((110,47),'BPS  /  FRONTEND ENGINEERING',font=font(17,mono=True),fill=GOLD)
-d.text((56,116),'Bibhu Prasad',font=font(64,True),fill=IVORY)
-d.text((56,193),'Sahu.',font=font(64,True),fill=IVORY)
-d.text((60,288),'Complex workflows.',font=font(28),fill=MUTED)
-d.text((60,331),'Clear interfaces.',font=font(28),fill=IVORY)
-d.line((60,401,1338,401),fill='#2B3443',width=1)
-d.text((60,430),'REACT   /   REDUX   /   JAVASCRIPT',font=font(17,mono=True),fill=MUTED)
-d.text((1100,430),'BIBHU-3214',font=font(17,mono=True),fill=GOLD)
-# An abstract interface composition, not a product screenshot.
-for x in range(862,1340,36):
-    for y in range(70,370,36):
-        d.ellipse((x,y,x+1,y+1),fill='#293345')
-d.rounded_rectangle((932,74,1297,333),radius=15,fill='#121B29',outline='#384459',width=2)
-d.line((932,113,1297,113),fill='#384459',width=1)
-for x,c in [(953,'#C9AE7B'),(971,'#66748B'),(989,'#66748B')]:
-    d.ellipse((x,90,x+6,96),fill=c)
-d.text((954,137),'interface / architecture',font=font(14,mono=True),fill=MUTED)
-d.rounded_rectangle((954,177,1273,210),radius=6,fill='#1D2A3E')
-d.rectangle((968,189,1166,193),fill='#70849C')
-d.rounded_rectangle((954,225,1105,294),radius=6,fill='#1A2535')
-d.rounded_rectangle((1121,225,1273,294),radius=6,fill='#1A2535')
-d.rectangle((968,243,1067,247),fill='#66748B')
-d.rectangle((1135,243,1241,247),fill='#66748B')
-d.rectangle((968,265,1029,268),fill='#384A62')
-d.rectangle((1135,265,1197,268),fill='#384A62')
-d.rounded_rectangle((853,303,1131,371),radius=12,fill='#172132',outline='#4D5563',width=1)
-d.text((876,326),'< thoughtful systems />',font=font(16,mono=True),fill=GOLD)
-base.save(ROOT/'assets/profile-banner.png')
-frames=[]
-for i in range(48):
-    frame=base.copy(); draw=ImageDraw.Draw(frame)
-    # Slow, understated progress along the top window edge; typography never moves.
-    x=949 + int(330*i/47)
-    draw.line((949,115,x,115),fill=GOLD,width=2)
-    draw.ellipse((x-3,112,x+3,118),fill=IVORY)
-    frames.append(frame)
-frames[0].save(ROOT/'assets/profile-banner.gif',save_all=True,append_images=frames[1:],duration=[90]*47+[1100],loop=0,optimize=True,disposal=1)
-print('Banner rendered:', (ROOT/'assets/profile-banner.gif').stat().st_size, 'bytes; 48 frames')
-for number,title,subtitle,name in [
-    ('01','Bill Management','CUSTOMERS  /  PRODUCTS  /  BILLING','project-billing.png'),
-    ('02','Identity & Notes','AUTHENTICATION  /  PERSONAL WORKSPACE','project-notes.png')]:
-    card=Image.new('RGB',(700,215),BG); cd=ImageDraw.Draw(card)
-    cd.rounded_rectangle((1,1,698,213),radius=16,outline='#2B3443',width=2)
-    cd.text((32,26),'SELECTED WORK  /  '+number,font=font(15,mono=True),fill=GOLD)
-    cd.text((29,76),title,font=font(37,True),fill=IVORY)
-    cd.text((32,157),subtitle,font=font(13,mono=True),fill=MUTED)
-    cd.line((32,194,668,194),fill='#2B3443',width=1)
-    cd.line((32,194,104,194),fill=GOLD,width=2)
-    card.save(ROOT/'assets'/name)
+W,H=1200,560
+BG='#080e20'; PANEL='#101c36'; LINE='#253959'; BLUE='#497cff'; CYAN='#8edbff'; WHITE='#f2f6ff'; MUTED='#a7b9d7'
+def font(n,bold=False):
+    candidates=[os.environ.get('PROFILE_FONT_BOLD' if bold else 'PROFILE_FONT',''), '/System/Library/Fonts/Supplemental/Arial'+(' Bold' if bold else '')+'.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans'+('-Bold' if bold else '')+'.ttf']
+    for p in candidates:
+        if p and Path(p).exists(): return ImageFont.truetype(p,n)
+    raise RuntimeError('Set PROFILE_FONT and PROFILE_FONT_BOLD to local TTF fonts')
+def txt(d,xy,s,n=24,c=WHITE,b=False): d.text(xy,s,font=font(n,b),fill=c)
+def box(d,xy,fill=PANEL,outline=LINE,r=16): d.rounded_rectangle(xy,r,fill=fill,outline=outline,width=2)
+def base(h=H):
+    im=Image.new('RGB',(W,h),BG); d=ImageDraw.Draw(im)
+    for x in range(0,W,40): d.line((x,0,x,h),fill='#0e1830')
+    for y in range(0,h,40): d.line((0,y,W,y),fill='#0e1830')
+    d.rectangle((0,0,7,h),fill=BLUE)
+    return im,d
+def hero(t):
+    im,d=base(); txt(d,(48,38),'BPS / FRONTEND ENGINEERING',22,CYAN,True)
+    txt(d,(45,94),'Bibhu Prasad Sahu',62,WHITE,True)
+    txt(d,(48,174),'Complex workflows. Clear interfaces.',31,MUTED)
+    # A code-to-state-to-interface scene; labels stay fixed and readable.
+    for x,label in [(48,'01 / COMPONENT'),(443,'02 / STATE'),(838,'03 / INTERFACE')]:
+        box(d,(x,256,x+310,460)); txt(d,(x+22,276),label,20,CYAN,True)
+    for k,(s,c) in enumerate([('<Workspace>',CYAN),('  state → view',WHITE),('  onAction()',MUTED),('</Workspace>',CYAN)]): txt(d,(70,320+k*28),s,23,c)
+    for k,s in enumerate(['input','update','render']):
+        y=326+k*39; d.ellipse((468,y,479,y+11),fill=BLUE if t>=k*.24 else LINE); txt(d,(494,y-6),s,24)
+        d.line((620,y+6,720,y+6),fill=LINE,width=5)
+        d.line((620,y+6,620+int(100*min(1,max(0,(t-k*.2)*2))),y+6),fill=BLUE,width=5)
+    box(d,(861,324,1125,354),fill='#203863',r=6)
+    for k in range(3):
+        x=861+k*91; box(d,(x,373,x+80,432),r=7)
+        hh=int(12+28*(.5+.5*math.sin(t*math.pi*2+k)))
+        d.rectangle((x+14,418-hh,x+66,418),fill=BLUE if k!=1 else CYAN)
+    for start in [361,756]:
+        d.line((start,358,start+77,358),fill=LINE,width=2)
+        x=start+int(77*t); d.ellipse((x-5,353,x+5,363),fill=CYAN)
+    txt(d,(48,500),'REACT / REDUX / JAVASCRIPT',23,MUTED)
+    txt(d,(907,500),'BUILD WITH INTENT',19,CYAN)
+    return im
+
+def project(t,forma=False):
+    im,d=base(400); title='Forma' if forma else 'BillFlow'
+    txt(d,(46,30),'02 / SELECTED WORK' if forma else '01 / SELECTED WORK',21,CYAN,True)
+    txt(d,(43,76),title,62,WHITE,True)
+    txt(d,(46,157),'Recruitment workspace' if forma else 'Billing workspace',28,MUTED)
+    txt(d,(46,216),'React + TypeScript' if forma else 'React + Redux',24,WHITE)
+    txt(d,(46,324),'FRONTEND DEMO / LOCAL DATA',20,CYAN)
+    box(d,(550,35,1150,362))
+    txt(d,(578,58),'CANDIDATE JOURNEY' if forma else 'CUSTOMER → INVOICE',22,CYAN,True)
+    labels=['Intake','Review','Shortlist'] if forma else ['Customer','Items','Invoice']
+    for k,label in enumerate(labels):
+        x=580+k*184
+        box(d,(x,113,x+158,270),fill='#172744',r=12)
+        txt(d,(x+15,132),label,22,WHITE,True)
+        if forma:
+            d.ellipse((x+53,179,x+89,215),fill=BLUE)
+            d.rounded_rectangle((x+36,223,x+107,239),8,fill='#355480')
+        else:
+            for j in range(3): d.rounded_rectangle((x+18,183+j*22,x+130-j*16,190+j*22),3,fill=BLUE if j==0 else '#355480')
+    d.line((598,308,1102,308),fill=LINE,width=3)
+    x=598+int(504*t); d.line((598,308,x,308),fill=BLUE,width=3); d.ellipse((x-7,301,x+7,315),fill=CYAN)
+    txt(d,(578,331),'ILLUSTRATIVE WORKFLOW',16,MUTED)
+    return im
+
+def save(name,fn):
+    frames=[fn(i/59) for i in range(60)]
+    frames[0].save(ROOT/'assets'/f'{name}.png')
+    # Fixed palette eliminates frame-to-frame color shimmer; delta frames reduce size.
+    palette=frames[0].quantize(colors=96)
+    frames=[f.quantize(palette=palette,dither=Image.Dither.NONE) for f in frames]
+    frames[0].save(ROOT/'assets'/f'{name}.gif',save_all=True,append_images=frames[1:],duration=100,optimize=True,disposal=1)
+    print(name,(ROOT/'assets'/f'{name}.gif').stat().st_size)
+if __name__=='__main__':
+    save('profile-banner',hero)
+    save('project-billing',project)
+    save('project-forma',lambda t:project(t,True))

@@ -11,7 +11,7 @@
   <a href="https://x.com/bibhuprasaddd">X</a>
 </p>
 
-<br />
+<p align="center"><sub>Motion plays once. <a href="./assets/profile-banner.png">View the still banner</a>.</sub></p>
 
 ### Software engineer. Frontend focus.
 
@@ -25,26 +25,45 @@ I’m interested in the decisions behind a useful interface: how components fit 
 
 Personal projects exploring practical application workflows. Each repository contains its implementation and setup details.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/bibhu-3214/Bill-Management-App"><img src="./assets/project-billing.png" alt="Selected work 01 — Bill Management" width="100%" /></a>
-<p>Customer, product and billing workflows in a browser-based React application.</p>
-<p><strong>Explore:</strong> connected CRUD flows, form validation, Redux state and browser-local persistence.</p>
-<p><code>React</code> <code>Redux</code> <code>Material UI</code> <code>Formik</code></p>
-<p><a href="https://github.com/bibhu-3214/Bill-Management-App"><strong>Read the code ↗</strong></a></p>
-<sub>Frontend-only personal project; not a production financial service.</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/bibhu-3214/user-authentication-react-redux"><img src="./assets/project-notes.png" alt="Selected work 02 — Identity and Notes" width="100%" /></a>
-<p>Registration, sign-in and account details connected to a personal notes workflow.</p>
-<p><strong>Explore:</strong> authenticated navigation, API interactions, validation and note management.</p>
-<p><code>React</code> <code>Redux</code> <code>React Router</code> <code>Axios</code></p>
-<p><a href="https://github.com/bibhu-3214/user-authentication-react-redux"><strong>Read the code ↗</strong></a></p>
-<sub>Personal application project; see the repository for its scope.</sub>
-</td>
-</tr>
-</table>
+### 01 / BillFlow
+
+<a href="https://github.com/bibhu-3214/Bill-Management-App">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/project-billing.png" />
+  <img src="./assets/project-billing.gif" alt="BillFlow — illustrated customer-to-items-to-invoice workflow in a dark cobalt workspace." width="100%" />
+</picture>
+</a>
+
+A **React and Redux billing workspace** connecting customers, products, invoice drafts, quotations and collections. I’m exploring form validation, explicit state transitions and connected workflows with encrypted browser-local persistence.
+
+**[Read the code ↗](https://github.com/bibhu-3214/Bill-Management-App)**
+
+<sub>Frontend-only personal demo; not a production financial service. The PDF upgrade remains work in progress in a draft PR.</sub>
+
+### 02 / Forma
+
+<a href="https://userjobapp.netlify.app/">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/project-forma.png" />
+  <img src="./assets/project-forma.gif" alt="Forma — illustrated candidate journey from intake through review to shortlist. Fictional-data recruitment demo." width="100%" />
+</picture>
+</a>
+
+A **React and TypeScript recruitment demo** with candidate intake, search and filtering, and shortlist, reject and reopen workflows. Dark mode and an animated candidate journey bring the workspace together.
+
+**[Explore the live demo ↗](https://userjobapp.netlify.app/)** &nbsp; · &nbsp; **[Read the code ↗](https://github.com/bibhu-3214/Job-App-for-user)**
+
+<sub>Synthetic candidates and browser-local persistence. No backend, employer delivery or production recruitment service. The artwork above illustrates the workflow rather than reproducing an app screenshot.</sub>
+
+<details>
+<summary><strong>Also built: Identity & Notes</strong></summary>
+
+Registration, sign-in and account details connected to a personal notes workflow. Explore authenticated navigation, API interactions, validation and note management with React, Redux, React Router and Axios.
+
+[Read the code ↗](https://github.com/bibhu-3214/user-authentication-react-redux)
+
+</details>
+
 
 <p align="right"><a href="https://github.com/bibhu-3214?tab=repositories">Browse all repositories →</a></p>
 
