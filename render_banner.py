@@ -77,6 +77,6 @@ def save(name,fn):
     frames[0].save(ROOT/'assets'/f'{name}.gif',save_all=True,append_images=frames[1:],duration=100,optimize=True,disposal=1)
     print(name,(ROOT/'assets'/f'{name}.gif').stat().st_size)
 if __name__=='__main__':
-    save('profile-banner',hero)
-    save('project-billing',project)
-    save('project-forma',lambda t:project(t,True))
+    save('profile-cobalt',hero)
+    save('billflow-cobalt',project)
+    save('forma-cobalt',lambda t:project(t,True))

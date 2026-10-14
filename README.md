@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-banner.png" />
-  <img src="./assets/profile-banner.gif" alt="Bibhu Prasad Sahu — Frontend Engineering. Complex workflows. Clear interfaces. React, Redux and JavaScript." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-cobalt.png" />
+  <img src="./assets/profile-cobalt.gif" alt="Bibhu Prasad Sahu — Frontend Engineering. Complex workflows. Clear interfaces. React, Redux and JavaScript." width="100%" />
 </picture>
 
 <p align="center">
@@ -11,7 +11,7 @@
   <a href="https://x.com/bibhuprasaddd">X</a>
 </p>
 
-<p align="center"><sub>Motion plays once. <a href="./assets/profile-banner.png">View the still banner</a>.</sub></p>
+<p align="center"><sub>Motion plays once. <a href="./assets/profile-cobalt.png">View the still banner</a>.</sub></p>
 
 ### Software engineer. Frontend focus.
 
@@ -29,8 +29,8 @@ Personal projects exploring practical application workflows. Each repository con
 
 <a href="https://github.com/bibhu-3214/Bill-Management-App">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/project-billing.png" />
-  <img src="./assets/project-billing.gif" alt="BillFlow — illustrated customer-to-items-to-invoice workflow in a dark cobalt workspace." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/billflow-cobalt.png" />
+  <img src="./assets/billflow-cobalt.gif" alt="BillFlow — illustrated customer-to-items-to-invoice workflow in a dark cobalt workspace." width="100%" />
 </picture>
 </a>
 
@@ -44,8 +44,8 @@ A **React and Redux billing workspace** connecting customers, products, invoice 
 
 <a href="https://userjobapp.netlify.app/">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/project-forma.png" />
-  <img src="./assets/project-forma.gif" alt="Forma — illustrated candidate journey from intake through review to shortlist. Fictional-data recruitment demo." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/forma-cobalt.png" />
+  <img src="./assets/forma-cobalt.gif" alt="Forma — illustrated candidate journey from intake through review to shortlist. Fictional-data recruitment demo." width="100%" />
 </picture>
 </a>
 
