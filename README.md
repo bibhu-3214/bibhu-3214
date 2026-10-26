@@ -13,9 +13,9 @@
 
 <p align="center"><sub>Motion plays once. <a href="./assets/profile-cobalt.png">View the still banner</a>.</sub></p>
 
-### Software engineer. Frontend focus.
+### Senior frontend engineer. React and TypeScript.
 
-I’m **Bibhu Prasad Sahu**, a Software Engineer at **GyanSys Inc.**, working with **React, Redux and JavaScript**. My experience includes enterprise application interfaces in the semiconductor domain.
+I’m **Bibhu Prasad Sahu**, a Senior Consultant at **GyanSys Inc.** with nearly five years of experience building **React and TypeScript** interfaces for enterprise semiconductor applications. I work with **Redux Toolkit, D3.js and REST APIs** on analytics dashboards and data-heavy workflows.
 
 I’m interested in the decisions behind a useful interface: how components fit together, where state belongs, and how people move through complex workflows. My aim is to make those decisions clear in both the product and the code.
 
